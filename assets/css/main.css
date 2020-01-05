@@ -22,7 +22,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+  list-style-type: none;
+  }
+  
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -35,6 +38,7 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 
 blockquote, q {
 	quotes: none;
@@ -3464,7 +3468,7 @@ input, select, textarea {
 
 /* Wrapper (main) */
 
-	#sidebar + #wrapper {
+	#sidebar + #wrapper{
 		margin-left: 18em;
 	}
 
@@ -3907,3 +3911,17 @@ input, select, textarea {
 			}
 
 		}
+    
+    
+.wrapper-button-more {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.button-more-projects {
+    position: relative;
+    top: 50%;
+}
+.size-of-nav-bar{
+  font-size: 10px;
+}
