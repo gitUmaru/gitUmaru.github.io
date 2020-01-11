@@ -3591,6 +3591,7 @@ input, select, textarea {
 
 			#header {
 				padding: 1em 2em;
+        width: 53em;
 			}
 
 		}
@@ -4170,13 +4171,11 @@ div.gallery ul li img:hover {
 /* Responsive hack */
 @media only screen and (min-width: 499px) and (max-width: 1212px) {
 	.wrapper {
-		width: 500px;
 	}
 }
 
 @media only screen and (max-width: 498px) {
 	.wrapper {
-		width: 300px;
 	}
 
 	div.gallery ul {
@@ -4203,12 +4202,11 @@ figure.snip1321 * {
   box-sizing: padding-box;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  
 }
 figure.snip1321 img {
   text-decoration: none !important;
   width:100%;
-  filter:grayscale(100%);
+
 }
 
 figure.snip1321 img:hover {
@@ -4246,13 +4244,14 @@ figure.snip1321 i {
    filter:none;
 }
 figure.snip1321:after {
+  background-color:rgba(112, 112, 112, 0.5);
   position: absolute;
   content: "";
   display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-transform: rotateX(-90deg);
