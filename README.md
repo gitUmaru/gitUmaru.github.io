@@ -1,3 +1,6 @@
+# gitUmaru.github.io
+
+
 ## umarali.ca
 This github repo is the source code for my personal website, umarali.ca. The actaul website design was adopted by HTML5up, they do really good work, and I tweaked very minor things and added a few elements ontop of it.
 
@@ -5,7 +8,7 @@ This github repo is the source code for my personal website, umarali.ca. The act
 The website is meant to act as a sort of portfolio for some the work that I have done over time. It highlights a lot of projects that I am really proud of.
  
 ## Screenshots
-![Homepage](https://imgur.com/a/9HmmcU5)
+![Homepage](https://i.imgur.com/sY1N0ez.png)
 
 ## Tech/framework used
 Built with:
