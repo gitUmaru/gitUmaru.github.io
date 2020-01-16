@@ -2617,6 +2617,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
 /* List */
 
 	ol {
@@ -3159,7 +3160,7 @@ input, select, textarea {
 			color: #ffffff;
 			font-size: 1em;
 			font-weight: bold;
-			padding: 1.75em 1.75em 0em 1.75em;
+			padding: 0em 1.75em 0em 1.75em;
 			text-align: left;
 		}
 
@@ -4202,11 +4203,13 @@ figure.snip1321 * {
   box-sizing: padding-box;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  object-fit:contain;
 }
 figure.snip1321 img {
   text-decoration: none !important;
-  width:100%;
-
+  width:25em;
+  height:25em;
+  object-fit:cover !important;
 }
 
 figure.snip1321 img:hover {
@@ -4244,7 +4247,7 @@ figure.snip1321 i {
    filter:none;
 }
 figure.snip1321:after {
-  background-color:rgba(112, 112, 112, 0.5);
+  background-color:rgba(112, 112, 112, 0.85);
   position: absolute;
   content: "";
   display: block;
@@ -4290,3 +4293,7 @@ figure.snip1321.hover:after {
   filter:none;
 }
 
+.project-th{
+  padding-bottom: 6em;
+  padding-top:1em;
+}
