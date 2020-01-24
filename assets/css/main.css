@@ -3543,11 +3543,11 @@ input, select, textarea {
 		.wrapper-page > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
-			width:80%;
+			width:60%;
       background-color:rgba(29, 141, 233,0.1);
       border-radius:20px;
-      margin-left: 10.0%;
-      margin-right:10.0%;
+      margin-left: 20.0%;
+      margin-right:20.0%;
       margin-bottom: 5em;
 		}
 
@@ -3555,7 +3555,6 @@ input, select, textarea {
 
 				.wrapper-page > .inner {
 					padding: 4em 4em 2em 4em ;
-          margin-left:0%;
 				}
 
 			}
@@ -4389,8 +4388,8 @@ figure.snip1321 * {
 }
 figure.snip1321 img {
   text-decoration: none !important;
-  width:90%;
-  height:35em;
+  width:65%;
+  height:20em;
   object-fit:cover !important;
   border-radius:10px;
   margin-bottom:1em;
@@ -4491,6 +4490,11 @@ figure.snip1321.hover:after {
 
 
 .double-text{
-  font-size:1.5em!important;
+  font-size:1.25em!important;
   line-height:2.5!important;
+}
+
+
+.center {
+  text-align:center;
 }
