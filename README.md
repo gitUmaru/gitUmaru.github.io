@@ -36,4 +36,4 @@ Built with:
 The website is a static webpage, meaning that the pages are not generated dynamically so theres no back-end, per se, for the user to setup. However, one can look at github's electron and Jekyll documentation to get a better understanding of the backend that Github Pages offer.
 
 ## Credits
-The webpage was designed by HTML5up, <a = href="html5up.net">Here.</a>
+The webpage was designed by HTML5up, <a href="html5up.net">Here.</a>
