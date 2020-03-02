@@ -7,7 +7,7 @@ This github repo is the source code for my personal website, umarali.ca. The act
 ## Motivation
 The website is meant to act as a sort of portfolio for some the work that I have done over time. It highlights a lot of projects that I am really proud of.
  
-## Screenshots
+## Screenshot
 ![Homepage](https://i.imgur.com/sY1N0ez.png)
 
 ## Tech/framework used
@@ -29,19 +29,11 @@ Built with:
   ```
     git clone github.com/gitUmaru/gitUmaru.github.io
   ```
-6. Commit changes and push
-  ```
-  git add .
-  ```
-  ```
-  git commit -m "COMMIT_MESSAGE"
-  ```
-  ```
-  git push origin master
-  ```
+6. Make changes to website, commit and push
+7. If you want custom domain name, add it to the CNAME file. Disclaimer, one thing to note about this is that you also have to setup SSL yourself.
 
 ## How to use?
-The website is a static webpage, meaning that the pages are not generated dynamically so theres no back-end, per se, for the user to setup. However, one can look at github's electron and Jekyll documentation to get a better understanding for that.
+The website is a static webpage, meaning that the pages are not generated dynamically so theres no back-end, per se, for the user to setup. However, one can look at github's electron and Jekyll documentation to get a better understanding of the backend that Github Pages offer.
 
 ## Credits
-The webpage was designed by HTML5up, I really liked the Hyperspace template they provided so under fair use I am using it for a personal website. 
+The webpage was designed by HTML5up, <a = href="html5up.net">Here.</a>
