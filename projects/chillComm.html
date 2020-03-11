@@ -32,19 +32,23 @@
 							<h1 class="major">Chill Calm</h1>
 							<span class="image fit"><img src="../images/chillCom/coverImage.jpg" alt="" /></span>
 							<p class="double-text">So this project was a submission for nwHacks 2020, which is one of the most popular and largest hackathon on the west coast. After find a team through the nwHacks 2020 slack channels we had a very brief brain storming session. The initial idea was to take facial input and generate computational artwork based on that. However, this quickly evolved into a very soft means of anxiety therapy.</p>
-              <div class="col-4"><span class="image fit"><img src="../images/chillCom/dash.png"></span></div>
+              <p class="double-text">This app is a way for either the youth or young adult demographic to manage and mitigate their stress. The web app is available anywhere with internet which vastly increases the accessibility. Using high level machine learning the web app understands facial expression and responds to it (although this feature was partly built during the hackathon).</p>
+              <div class="col-4"><span class="image fit"><img src="../images/chillCom/original.png"></span></div>
               <p class="center">Figure 1. Dashboard page of the web app (front end dev did really good job)</p>
-
+              <p class="double-text">We build it using a django back end, standard html, css, and js front end, google app engine to deploy, and the google vision API for handling the facial expression machine learning.</p>]
 							<p class="double-text">Basically, we used google cloud as our web app deploying service, and we also used their google vision API, in order to recognize emotions in a users face. The user would take a photo of their face in the brower and it automatically submits it to our API. Which we then process and generate a specific js animation based off of that. The entire thing was built in Django which was pretty hard to learn as we went along, however the challenge was appreciated.</p>
               <div class="col-4"><span class="image fit"><img src="../images/chillCom/exaple1.png"></span></div>
               <p class="center">Figure 2. Just fixed API integration issue, showing proof of concept</p>
-
-              <p class="double-text">Some other feaures that we added were: A calming music playlist, a chat bot (so you have someone to talk to), and a button that locates mental health clinics as well as other imporant resources that are close to you</p>
+              <p class="double-text">Some challenges that we faced were some integration issues with the Google vision API. To put it into context, our project offered a facial recognition feature where it would detect whether a person appeared sad, happy, or any other range of emotions that the API had. It was everyone's first time attempting a project that utilities that API. Overall, while the challenge was very tough, it proved to be a very good learning experience, and definitely a tool we will use again in the future.</p>
+              <p class="double-text">Some other features that we added were: A calming music playlist, a chat bot (so you have someone to talk to), and a button that locates mental health clinics as well as other imporant resources that are close to you</p>
+              <p class="double-text">Getting the Vision API as well as the Google App Engine to work. While not necessarily a difficult task in their own respective goals, integrating this with a python web framework (Django) which has various different formatted for handling web requests.<p>
               <div class="col-4"><span class="image fit"><img src="../images/chillCom/msuic.png"></span></div>
               <p class="center">Figure 3. Example of the music page</p>
-
-              <p class="double-text">Solid project all around, I'm really glad I did it. I enjoyed the project, especially considering that this was my first hackathon. I'm looking foreword to the next hackathon that I get to compete in.</p>
+              <p class="double-text">Aside from the obvious technical skills gained during this project (Django, Google Vision API, Google App Engine, etc) but more so we learned how to effectively wok together as a team. We were able to successfully coordinate all of our requests with each other so that the site worked well. Specifically, I would work on taking an image and determine facial expression using Google Vision while another teammate would work on receiving that image and properly "fitting" it for me to use.</p>
+              <p class="double-text">Solid project all around, I'm really glad I did it. I enjoyed the project, especially considering that this was my first hackathon. I'm looking forward to the next hackathon that I get to compete in.</p>
+              <p class="double-text">We hope to flesh the nuances of the project and really make its key features stand out. Furthermore, we hope to expand a lot more of features to take advantage of the many APIs available out there. Specifically the data processing module from Google Cloud which can better help us understand the trends of anxiety within certain demographics.</p>
               <p class="double-text">Code and Documentation on Github, and Devpost under "Chill Calm" for nwHacks 2020</p>
+              
 
 						</div>
 					</section>
