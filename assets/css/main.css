@@ -1904,7 +1904,7 @@ input, select, textarea {
 		button.fit-center,
 		.button.fit-center {
 			width: 75%;
-      left:12.5%;
+      margin-left:10%;
 		}
 
 
@@ -3217,8 +3217,9 @@ input, select, textarea {
 }
 
   .wrapper-proj > .inner-proj {
-    padding: 5em 20em 1em 20em ;
     max-width: 100%;
+    margin:auto;
+    width:70em;
     overflow:auto;
   }
 
@@ -4388,7 +4389,8 @@ figure.snip1321 * {
 }
 figure.snip1321 img {
   text-decoration: none !important;
-  width:65%;
+  width:100%;
+  padding: 2em;
   height:20em;
   object-fit:cover !important;
   border-radius:10px;
@@ -4402,13 +4404,13 @@ figure.snip1321 img:hover {
 }
 
 figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
+  top: 60%;
+  left: 3em;
   position: absolute;
   opacity: 0;
   z-index: 1;
    filter:none;
+   text-align: left;
 }
 figure.snip1321 h2,
 figure.snip1321 h4 {
@@ -4429,7 +4431,7 @@ figure.snip1321 i {
    filter:none;
 }
 figure.snip1321:after {
-  background-color:rgba(112, 112, 112, 0.85);
+  /*background-color:rgba(112, 112, 112, 0.85);*/
   position: absolute;
   content: "";
   display: block;
