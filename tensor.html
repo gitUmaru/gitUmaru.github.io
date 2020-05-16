@@ -10,6 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
     <script src="assets/js/p5.js"></script>
     <script src="assets/js/p5.sound.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
 	</head>
 
 
@@ -38,149 +41,143 @@
 						<div class="inner">
 							<h1 class="major">Javascript Playground</h1>
               <span class="image fit" id="sketch-holder">
-              <!--
-                  var canvas = createCanvas(1600, 600);
+              <!--var canvas = createCanvas(1600, 600);
                   canvas.parent('sketch-holder');-->
-             <!-- <script>
-let NUMSINES = 20; // how many of these things can we do at once?
-let sines = new Array(NUMSINES); // an array to hold all the current angles
-let rad; // an initial radius value for the central sine
-let i; // a counter variable
+                <script type="text/javascript">
+let movers = [];
 
-// play with these to get a sense of what's going on:
-let fund = 0.005; // the speed of the central sine
-let ratio = 1; // what multiplier for speed is each additional sine?
-let alpha = 50; // how opaque is the tracing system
-
-let trace = false; // are we tracing?
+// Liquid
+let liquid;
 
 function setup() {
-  var canvas = createCanvas(1600, 600);
-  canvas.parent('sketch-holder');
-
-  rad = height / 4; // compute radius for central circle
-  background(204); // clear the screen
-
-  for (let i = 0; i<sines.length; i++) {
-    sines[i] = PI; // start EVERYBODY facing NORTH
-  }
+  var canvas = createCanvas(800, 600);
+  canvas.parent("sketch-holder");
+  reset();
+  // Create liquid object
+  liquid = new Liquid(0, height / 2, width, height / 2, 0.1);
 }
 
 function draw() {
-  if (!trace) {
-    background(204); // clear screen if showing geometry
-    stroke(0, 255); // black pen
-    noFill(); // don't fill
-  }
+  background(127);
 
-  // MAIN ACTION
-  push(); // start a transformation matrix
-  translate(width / 2, height / 2); // move to middle of screen
+  // Draw water
+  liquid.display();
 
-  for (let i = 0; i < sines.length; i++) {
-    let erad = 0; // radius for small "point" within circle... this is the 'pen' when tracing
-    // setup for tracing
-    if (trace) {
-      stroke(0, 0, 255 * (float(i) / sines.length), alpha); // blue
-      fill(0, 0, 255, alpha / 2); // also, um, blue
-      erad = 5.0 * (1.0 - float(i) / sines.length); // pen width will be related to which sine
+  for (let i = 0; i < movers.length; i++) {
+
+    // Is the Mover in the liquid?
+    if (liquid.contains(movers[i])) {
+      // Calculate drag force
+      let dragForce = liquid.calculateDrag(movers[i]);
+      // Apply drag force to Mover
+      movers[i].applyForce(dragForce);
     }
-    let radius = rad / (i + 1); // radius for circle itself
-    rotate(sines[i]); // rotate circle
-    if (!trace) ellipse(0, 0, radius * 2, radius * 2); // if we're simulating, draw the sine
-    push(); // go up one level
-    translate(0, radius); // move to sine edge
-    if (!trace) ellipse(0, 0, 5, 5); // draw a little circle
-    if (trace) ellipse(0, 0, erad, erad); // draw with erad if tracing
-    pop(); // go down one level
-    translate(0, radius); // move into position for next sine
-    sines[i] = (sines[i] + (fund + (fund * i * ratio))) % TWO_PI; // update angle based on fundamental
-  }
 
-  pop(); // pop down final transformation
+    // Gravity is scaled by mass here!
+    let gravity = createVector(0, 0.1 * movers[i].mass);
+    // Apply gravity
+    movers[i].applyForce(gravity);
+
+    // Update and display
+    movers[i].update();
+    movers[i].display();
+    movers[i].checkEdges();
+  }
 
 }
 
-function keyReleased() {
-  if (key==' ') {
-    trace = !trace;
-    background(255);
+
+function mousePressed() {
+  reset();
+}
+
+// Restart all the Mover objects randomly
+function reset() {
+  for (let i = 0; i < 9; i++) {
+    movers[i] = new Mover(random(0.5, 3), 40 + i * 70, 0);
   }
 }
-              </script>-->
 
+let Liquid = function(x, y, w, h, c) {
+  this.x = x;
+  this.y = y;
+  this.w = w;
+  this.h = h;
+  this.c = c;
+};
 
+// Is the Mover in the Liquid?
+Liquid.prototype.contains = function(m) {
+  let l = m.position;
+  return l.x > this.x && l.x < this.x + this.w &&
+         l.y > this.y && l.y < this.y + this.h;
+};
 
-<div>Teachable Machine Image Model - p5.js and ml5.js</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-<script type="text/javascript">
-  // Classifier Variable
-  let classifier;
-  // Model URL
-  let imageModelURL = './my_model/';
-  
-  // Video
-  let video;
-  let flippedVideo;
-  // To store the classification
-  let label = "";
+// Calculate drag force
+Liquid.prototype.calculateDrag = function(m) {
+  // Magnitude is coefficient * speed squared
+  let speed = m.velocity.mag();
+  let dragMagnitude = this.c * speed * speed;
 
-  // Load the model first
-  function preload() {
-    classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+  // Direction is inverse of velocity
+  let dragForce = m.velocity.copy();
+  dragForce.mult(-1);
+
+  // Scale according to magnitude
+  // dragForce.setMag(dragMagnitude);
+  dragForce.normalize();
+  dragForce.mult(dragMagnitude);
+  return dragForce;
+};
+
+Liquid.prototype.display = function() {
+  noStroke();
+  fill(50);
+  rect(this.x, this.y, this.w, this.h);
+};
+
+function Mover(m, x, y) {
+  this.mass = m;
+  this.position = createVector(x, y);
+  this.velocity = createVector(0, 0);
+  this.acceleration = createVector(0, 0);
+}
+
+// Newton's 2nd law: F = M * A
+// or A = F / M
+Mover.prototype.applyForce = function(force) {
+  let f = p5.Vector.div(force, this.mass);
+  this.acceleration.add(f);
+};
+
+Mover.prototype.update = function() {
+  // Velocity changes according to acceleration
+  this.velocity.add(this.acceleration);
+  // position changes by velocity
+  this.position.add(this.velocity);
+  // We must clear acceleration each frame
+  this.acceleration.mult(0);
+};
+
+Mover.prototype.display = function() {
+  stroke(0);
+  strokeWeight(2);
+  fill(255,127);
+  ellipse(this.position.x, this.position.y, this.mass * 16, this.mass * 16);
+};
+
+// Bounce off bottom of window
+Mover.prototype.checkEdges = function() {
+  if (this.position.y > (height - this.mass * 8)) {
+    // A little dampening when hitting the bottom
+    this.velocity.y *= -0.9;
+    this.position.y = (height - this.mass * 8);
   }
+};
 
-  function setup() {
-    createCanvas(320, 260);
-    // Create the video
-    video = createCapture(VIDEO);
-    video.size(320, 240);
-    video.hide();
-
-    flippedVideo = ml5.flipImage(video)
-    // Start classifying
-    classifyVideo();
-  }
-
-  function draw() {
-    background(0);
-    // Draw the video
-    image(flippedVideo, 0, 0);
-
-    // Draw the label
-    fill(255);
-    textSize(16);
-    textAlign(CENTER);
-    text(label, width / 2, height - 4);
-  }
-
-  // Get a prediction for the current video frame
-  function classifyVideo() {
-    flippedVideo = ml5.flipImage(video)
-    classifier.classify(flippedVideo, gotResult);
-  }
-
-  // When we get a result
-  function gotResult(error, results) {
-    // If there is an error
-    if (error) {
-      console.error(error);
-      return;
-    }
-    // The results are in an array ordered by confidence.
-    // console.log(results[0]);
-    label = results[0].label;
-    // Classifiy again!
-    classifyVideo();
-  }
-</script>
-
-
-
+                </script>
+                <p> Click on animation to reset (animation below, still working on positon code)</p>
               </span>
-              <p class="double-text">Press spacebar to see the trace</p
 						</div>
 					</section>
 
