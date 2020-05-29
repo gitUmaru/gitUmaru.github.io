@@ -8,7 +8,12 @@ This github repo is the source code for my personal website, umarali.ca. The act
 The website is meant to act as a sort of portfolio for some the work that I have done over time. It highlights a lot of projects that I am really proud of.
  
 ## Screenshot
+
+v2.0.a1
 ![Homepage](https://i.imgur.com/sY1N0ez.png)
+
+v3.1.b1
+![Current](https://i.imgur.com/2sU9RdJ.jpg)
 
 ## Tech/framework used
 Built with:
