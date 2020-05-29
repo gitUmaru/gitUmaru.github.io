@@ -20,14 +20,14 @@
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #64a19d;
-  --cyan: #17a2b8;
+  --cyan: var(--primary);
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #0bb7e2;
+  --primary: #b9a010;
   --secondary: #6c757d;
   --success: #28a745;
-  --info: #17a2b8;
+  --info: var(--primary);
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
@@ -2497,12 +2497,12 @@ fieldset:disabled a.btn {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #68cce6;
+  background-color: var(--primary);
   border-color: var(--secondary);
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #68cce6;
+  background-color: var(--primary);
   border-color: var(--secondary);
   box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
 }
@@ -2582,8 +2582,8 @@ fieldset:disabled a.btn {
 
 .btn-info {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-info:hover {
   color: #fff;
@@ -2598,8 +2598,8 @@ fieldset:disabled a.btn {
 }
 .btn-info.disabled, .btn-info:disabled {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
   color: #fff;
@@ -2836,25 +2836,25 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-info {
-  color: #17a2b8;
-  border-color: #17a2b8;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-outline-info:hover {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-outline-info:focus, .btn-outline-info.focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 .btn-outline-info.disabled, .btn-outline-info:disabled {
-  color: #17a2b8;
+  color: var(--primary);
   background-color: transparent;
 }
 .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
@@ -4820,7 +4820,7 @@ a.badge-success:focus, a.badge-success.focus {
 
 .badge-info {
   color: #fff;
-  background-color: #17a2b8;
+  background-color: var(--primary);
 }
 a.badge-info:hover, a.badge-info:focus {
   color: #fff;
@@ -6240,7 +6240,7 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #17a2b8 !important;
+  background-color: var(--primary) !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
@@ -6360,7 +6360,7 @@ button.bg-black:focus {
 }
 
 .border-info {
-  border-color: #17a2b8 !important;
+  border-color: var(--primary) !important;
 }
 
 .border-warning {
@@ -9950,7 +9950,7 @@ a.text-success:hover, a.text-success:focus {
 }
 
 .text-info {
-  color: #17a2b8 !important;
+  color: var(--primary) !important;
 }
 
 a.text-info:hover, a.text-info:focus {
@@ -10233,7 +10233,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/anat.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("https://w.wallhaven.cc/full/eo/wallhaven-eo18wo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10301,7 +10301,7 @@ body {
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 3rem;
   }
   .projects-section .project-text hr {
     border-color: var(--primary);
@@ -10311,8 +10311,8 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/footer.jpg");
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-footer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10368,4 +10368,8 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

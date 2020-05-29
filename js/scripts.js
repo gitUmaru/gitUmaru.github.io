@@ -54,3 +54,16 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+function getRandomImage() {
+  var images = ['https://w.wallhaven.cc/full/r2/wallhaven-r22xrq.jpg', 'https://w.wallhaven.cc/full/j5/wallhaven-j55j3q.jpg', 'https://w.wallhaven.cc/full/md/wallhaven-mdd63k.jpg','https://w.wallhaven.cc/full/md/wallhaven-mdd63k.jpg','https://w.wallhaven.cc/full/96/wallhaven-966wdd.jpg'];
+  var image = images[Math.floor(Math.random()*images.length)];
+ 
+return image;
+}
+ 
+function displayRandomImage() {
+  document.body.style.background = getRandomImage();
+}
+
+displayRandomImage();
