@@ -46,3 +46,4 @@ The website is a static webpage, meaning that the pages are not generated dynami
 
 ## Credits
 The webpage was designed by HTML5up, <a href="html5up.net">Here.</a>
+The webpage was desigend by StartBootstrap <a href="https://startbootsrap.com/">Here</a>
