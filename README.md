@@ -16,10 +16,14 @@ v3.1.b1
 ![Current](https://i.imgur.com/2sU9RdJ.jpg)
 
 ## Tech/framework used
-Built with:
+v2.0.a1 built with:
 - [Sass](https://sass-lang.com/)
 - [HTML5Up](https://html5up.net/)
 - [GetForm.io](http://getforms.io/)
+
+v3.1.b1 built with:
+- [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [Start Bootstrap](https://startbootstrap.com/)
 
 
 ## Setup
