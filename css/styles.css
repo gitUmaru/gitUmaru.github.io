@@ -10378,3 +10378,8 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.project-image {
+width: 25rem;
+height:auto;
+}
