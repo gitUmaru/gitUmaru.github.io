@@ -1,3 +1,37 @@
+:root {
+  --blue: #48CAE4;
+  --button: var(--blue);
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #64a19d;
+  --cyan: #ffffff;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary:#00B4D8;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: var(--primary);
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --black: #000000;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: Karla, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -64,7 +98,7 @@ img {
   position: absolute;
   top: -100px;
   left: 10%;
-  color: #b9a010;
+  color: var(--primary);
 }
 
 .text h3{
@@ -84,14 +118,14 @@ img {
   bottom: -100px;
   left: 25%;
   width: 50%;
-  border: 3px solid #b9a010;
+  border: 3px solid var(--primary);
   padding: 15px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
 
 .button:hover{
-  background-color: #b9a010;
+  background-color: var(--primary);
   color: #F5F5F5;
 }
 
@@ -154,7 +188,7 @@ img {
 #details .button{
   position: absolute;
   width: 30%;
-  background-color: #b9a010;
+  background-color: var(--primary);
   color: #F5F5F5;
   text-align: center;
   left: 25px;
@@ -167,7 +201,7 @@ img {
   bottom: 30px;
   right: 25px;
   font-size: 3rem;
-  color: #b9a010;
+  color: var(--primary);
 }
 
 #details .button:hover,

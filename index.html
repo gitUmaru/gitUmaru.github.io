@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
+        
         <meta name="author" content="" />
         <title>Muhammad Umar Ali</title>
         <!-- Favicon links-->
@@ -36,24 +37,35 @@
                     </ul>
                 </div>
             </div>
+        </div>
         </nav>
+
         <!-- Masthead-->
-        <header class="masthead" id="randomImage">
+        <div id="particles-js"></div>
+        <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Umar Ali</h1>
-                    <h2 class="text-white mx-auto mt-2 mb-5">I am a Biomedical Engineering Student studying at UBC. I am also an aspiring scientist with a passion for research, medicine, and computer science.</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#projects">Projects</a>
+                      <h2 class="text-white mx-auto mt-2 pt-3 mb-5">
+                        <span class="typed" data-typed-items="Biomedical Engineering Student, Software Developer, Aspiring Scientist, Pretends to know how to code"></span>
+                      </h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">About Me</a>
                 </div>
             </div>
         </header>
+          
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2 class="text-white mb-4">About me</h2>
-                        <p class="text-white">I believe that the most difficult and grand challenges can be solved with ingenuity, creativity and passion. I think that diversity and interdisciplinary knowledge is the key for innovation and the overall betterment of humanity. Above all, I know that hard work and passion will pave the way for success.</p>
+                        <h1 class="text-white mb-4">Hey! 👋</h2>
+                        <p class="text-white big">I am a 2<sup>nd</sup> year engineering student @ UBC with a major in biomedical engineering and intended specialty in bioinformatics.
+                        <br>
+                        <br>
+                        <br>
+                         Outside of school, I am an electrical member @ UBC BEAR where I play with circuits/PCBs as well as a dry lab member on @ UBC iGEM for creating software solutions in synthetic biology. I also like to bother my professors about research oppurtunities in medicine.
+                        </p>
                     </div>
                 </div>
                 <img class="img-fluid" src="assets/img/bg-aboutme.png" alt="" />
@@ -63,14 +75,14 @@
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects-1">
             <div class="container">
-              <h2 align="center"class="text-black-50 mb-4" id="projects">Project Showcase</h2>
+              <h2 align="center"class="text-black mb-4" id="projects">Project Showcase</h2>
                 <!-- Featured Project Row-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0 project-image" src="https://i.imgur.com/tPBb7yC.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>PixGen</h4>
-                            <p class="text-black-50 mb-0">Our team's web app aids physicians and other healthcare providers in uploading pictures of their patients’ skin lesions, creating an open-source database of skin conditions in patients with darker skin tones. We then plan to use this database in downstream machine learning algorithms, including training a DCGAN to generate even more examples of skin conditions in darker skin tones. Our goal is to increase the visibility of skin conditions in all skin tones and remove cognitive biases that contribute to poorer health outcomes in minorities.</p>
+                            <p class="text-black mb-0">Our team's web app aids physicians and other healthcare providers in uploading pictures of their patients’ skin lesions, creating an open-source database of skin conditions in patients with darker skin tones. We then plan to use this database in downstream machine learning algorithms, including training a DCGAN to generate even more examples of skin conditions in darker skin tones. Our goal is to increase the visibility of skin conditions in all skin tones and remove cognitive biases that contribute to poorer health outcomes in minorities.</p>
                             <a class="btn btn-info mt-4" href="https://devpost.com/software/invictus">Read More</a>
                         </div>
                     </div>
@@ -83,7 +95,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Pathomatic</h4>
-                                    <p class="mb-0 text-white-50">Artifical Intellgience in Precision Medicine for Ovarian Carcinoma (AIPMOC). I try to build an android app that looks for cancerous regions of a cell given a pathology slide sample. It has an image recognition with attention machnine learning model. It also digitally reconstructs microscope slides.</p>
+                                    <p class="mb-0 text-white">Artifical Intellgience in Precision Medicine for Ovarian Carcinoma (AIPMOC). I try to build an android app that looks for cancerous regions of a cell given a pathology slide sample. It has an image recognition with attention machnine learning model. It also digitally reconstructs microscope slides.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                     <a class="btn btn-info mt-4" href="https://github.com/gitUmaru/Pathomatic">Read More</a>
                                 </div>
@@ -99,7 +111,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Open Biopipeline</h4>
-                                    <p class="mb-0 text-white-50">
+                                    <p class="mb-0 text-white">
                                       Open Biopipeline is an open source bioinformatics tool for general and broad purposes, specifically the goal of this project is to develop a tool for researchers or students to use in order to investigate genes.
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
@@ -117,7 +129,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Blood Cell Image Classifier</h4>
-                                    <p class="mb-0 text-white-50">Its like where's waldo, but instead of a lanky cartoon character, its cancerous tissue of histostained blood cell samples. A simple image classifier for leukemia blood cells. accomplished using google Teachable Machine and Tensorflow</p>
+                                    <p class="mb-0 text-white">Its like where's waldo, but instead of a lanky cartoon character, its cancerous tissue of histostained blood cell samples. A simple image classifier for leukemia blood cells. accomplished using google Teachable Machine and Tensorflow</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                     <a class="btn btn-info mt-4" href="https://github.com/gitUmaru/leukemia_ImClass">Read More</a>
                                 </div>
@@ -156,7 +168,7 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section class="contact-section bg-primary">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -165,7 +177,7 @@
                                 <i class="fab fa-github text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">github</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="https://github.com/gitUmaru">gitUmaru</a></div>
+                                <div class="small text-black"><a href="https://github.com/gitUmaru">gitUmaru</a></div>
                             </div>
                         </div>
                     </div>
@@ -175,7 +187,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="mailto:umaruali@student.ubc.ca">umaruali@student.ubc.ca</a></div>
+                                <div class="small text-black"><a href="mailto:umaruali@student.ubc.ca">umaruali@student.ubc.ca</a></div>
                             </div>
                         </div>
                     </div>
@@ -185,7 +197,7 @@
                                 <i class="fab fa-linkedin text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Linkedin</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="https://www.linkedin.com/in/muhammad-umar-ali-1a638818b/">Muhammad Umar Ali</a></div>
+                                <div class="small text-black"><a href="https://www.linkedin.com/in/muhammad-umar-ali-1a638818b/">Muhammad Umar Ali</a></div>
                             </div>
                         </div>
                     </div>
@@ -196,13 +208,18 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Umar Ali 2020 <br/>Made with Bootstrap 4 | Start Bootstrap</div></footer>
+        <footer class="footer bg-primary small text-center text-white"><div class="container">Copyright © Umar Ali 2020 <br/>Made with Bootstrap 4 | Start Bootstrap</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
+        <!-- Third party plugin JS and CDN-->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/typed/typed.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/app.js"></script>
+        
+
     </body>
 </html>
