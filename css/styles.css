@@ -10245,10 +10245,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-
-
-   var(--primary);
    */
+  background-color: var(--primary);
 }
 
 #particles-js {
@@ -10404,4 +10402,8 @@ body {
 
 .big {
   font-size: 1.25rem !important;
+}
+
+.big-bottom-bar {
+  margin-bottom: 30rem !important;
 }

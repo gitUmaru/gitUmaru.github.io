@@ -349,7 +349,7 @@ var stack2 = new ImageStack({
 
 // append the stack to the .example element
 
-document.querySelector('.mri-example').appendChild(stack1);
-document.querySelector('.mri-example').appendChild(stack2);
+// document.querySelector('.mri-example').appendChild(stack1);
+// document.querySelector('.mri-example').appendChild(stack2);
 
 
