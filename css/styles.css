@@ -10247,17 +10247,8 @@ body {
 
 .masthead {
   position: relative;
-  /* width: 100%; */
-  /* height: auto; */
   min-height: 10rem;
   padding: 10rem 0;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%); */
-  /* 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-   */
 }
 
 #particles-js {
