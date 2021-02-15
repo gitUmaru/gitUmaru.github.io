@@ -27,6 +27,7 @@
   --gray-dark: #343a40;
   --primary:#00B4D8;
   --secondary: #6c757d;
+  --tertiary: #0096C7;
   --success: #28a745;
   --info: var(--primary);
   --warning: #ffc107;
@@ -478,6 +479,7 @@ mark,
   max-width: 100%;
   height: auto;
   margin-bottom:-1.75rem;
+  background-size: cover;
 }
 
 .img-thumbnail {
@@ -6226,12 +6228,22 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: var(--secondary) !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
+  background-color: #545b62 !important;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
+}
+
+a.bg-tertiary:hover, a.bg-tertiary:focus,
+button.bg-tertiary:hover,
+button.bg-tertiary:focus {
   background-color: #545b62 !important;
 }
 
@@ -10235,8 +10247,8 @@ body {
 
 .masthead {
   position: relative;
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   min-height: 10rem;
   padding: 10rem 0;
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%); */
@@ -10246,7 +10258,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
    */
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 #particles-js {
@@ -10314,7 +10326,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid var(--primary);
+    border-left: 0.5rem solid var(--white);
   }
 }
 .projects-section .project-text {
@@ -10326,7 +10338,7 @@ body {
     padding: 3rem;
   }
   .projects-section .project-text hr {
-    border-color: var(--primary);
+    border-color: var(--white);
     border-width: 0.25rem;
     width: 30%;
   }
@@ -10407,3 +10419,10 @@ body {
 .big-bottom-bar {
   margin-bottom: 30rem !important;
 }
+
+.paragraph {
+   text-align: left !important;
+   padding: 3rem;
+   line-height: 2;
+}
+
