@@ -10,10 +10,13 @@ The website is meant to act as a sort of portfolio for some the work that I have
 ## Screenshot
 
 v2.0.a1
-![Homepage](https://i.imgur.com/sY1N0ez.png)
+![Old](https://i.imgur.com/sY1N0ez.png)
 
 v3.1.b1
-![Current](https://i.imgur.com/2sU9RdJ.jpg)
+![Old](https://i.imgur.com/2sU9RdJ.jpg)
+
+v4.2.rc2
+![Old](https://i.imgur.com/dxf5Oml.png)
 
 ## Tech/framework used
 v2.0.a1 built with:
@@ -25,6 +28,10 @@ v3.1.b1 built with:
 - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 - [Start Bootstrap](https://startbootstrap.com/)
 
+v4.2.rc2 built with:
+- Previous framework
+- particle.js
+- typed.js
 
 ## Setup
 1. Create new github repo on online website
