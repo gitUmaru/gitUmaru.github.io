@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
-  font-size: 1.35em;
+  font-size: 1.15em;
 }
 
 .timeline-body p {
@@ -179,7 +179,7 @@ header ul a strong {
 }
 
 section {
-  float:right;
+  /* float:right; */
   padding-bottom:2em;
   margin-left: 2em;
   margin-right:2em;
