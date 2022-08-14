@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+
   </head>
   <body>
     <div class="row mx-auto wrapper justify-content-center">
@@ -57,9 +61,44 @@
           </nav>
       </div>
     </div>
-    <div class="wrapper row mx-auto justify-content-center">
+    <div class="wrapper row px-3 mx-auto justify-content-center">
         
-        <p class="text-center">Still under construction...</p>
+        
+
+        <style>
+          :root {
+             --size: 1.4;
+          }
+          
+          .cmd, .cmd div, .cmd span[data-text]:not(.cmd-inverted):not(.token):not(.emoji), .terminal, .terminal-output>:not(.raw) a, .terminal-output>:not(.raw) div, .terminal-output>:not(.raw) span[data-text]:not(.token):not(.inverted):not(.terminal-inverted):not(.cmd-inverted):not(.terminal-error):not(.emoji), .terminal.external [data-text] {
+            background-color: #fff;
+            color: black;
+          }
+
+          </style>
+
+        <script>
+
+          $('body').terminal({
+              Hello: function(what) {
+                  this.echo('Hello, ' + what +
+                            '. Welcome to this terminal.');
+
+              },
+
+              help: function() {
+                  this.echo('Unfortunately, this is still under construction...\n\n\n' +'[[b;black;white]But]' +', you should try typing `Hello, <YOUR_NAME>`');
+              },
+
+              umar: function() {
+                  this.echo('. ..     .  .   ..  .                           \n ............................... ..               \n ...............................................  \n ...............................................  \n .......................*#*(%........... .....    \n...................*##%&@@&&@&&.,.............. ..\n.................%(&@(((#&&#&&&&&............... .\n.................%&(**,,,.,*/*#&%&................\n.................,&/##(##/%%%%/%@#................\n..................%*,*(/*./%#/*(/.................\n..................&#//*%%/#/**/&................ .\n..................&&&@%//*/&&&&&..................\n.................,%@@&&%&%%&@@&,,.................\n...............,,,*%@@@@@@@@@@&,,.................\n.............,&&&&&@%&&&&@&&%#%&&&%&..............\n.........%&%&&&&&&&&@@@@@@@@@&&%&&&&&%%%%.........\n.......%&&&&&&&&&&&&&@@@@@&&&&&&&&&&&&&&&&%.......\n.....*%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%......\n.....&&&@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@&&&%.....\n..../&&&&@&&@@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%,,,..');
+              }
+              
+          }, {
+              greetings: 'This is still under construction...\nSorry about that!\n\n'
+          });
+
+        </script>
 
       <footer>
 
