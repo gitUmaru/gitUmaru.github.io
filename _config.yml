@@ -1,4 +1,10 @@
 theme: jekyll-theme-minimal
+
+header_pages:
+  - index.html
+  - notes.html
+  - blog.html
+
 # Where things are
 source              : .
 destination         : ./_site
