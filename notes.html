@@ -19,7 +19,22 @@
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+
+    <!-- note taking CDN imports -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
+        },
+      };
+    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
+    ></script>
 
   </head>
   <body>
@@ -59,24 +74,44 @@
       </div>
     </div>
     <div class="wrapper row mx-auto justify-content-center">
+      
+      <div class="container bg-light blog-post mt-4" role="button" class="collapsed text-center" data-toggle="collapse" href="#deBoer"  aria-expanded="false" aria-controls="deBoer">
+        <div class="module m-3">
+            <a role="button" class="collapsed text-center" data-toggle="collapse" href="#deBoer"  aria-expanded="false" aria-controls="deBoer"> </a>
+            <h3>SBME Seminar - Dr. DeBoer Lecture</h3>
+            <i>06-30-22</i>
+            <p> <b>Overview:</b> Genomes encode for genes and the gene regulatory signals that enable those genes to be transcribed, and are continually shaped through evolution. Here, we sought to create a transcriptional null hypothesis by quantifying the transcriptional activity of evolutionarily naïve DNA, using human DNA expressed in yeast and computational predictions of random DNA activity in human. </p>
+            <p class="collapse" id="deBoer" aria-expanded="false">
+            <zero-md src="https://raw.githubusercontent.com/gitUmaru/notes/master/SBME%20Events/Transcriptional%20activity%20is%20the%20default%20state%20of%20eukaryotic%20DNA.md" no-shadow></zero-md>
+            </p>
+          </div>
+        </div>
         
-        <!-- <p class="text-center">Still under construction...</p> -->
+        <div class="container bg-light blog-post mt-4" role="button" class="collapsed text-center" data-toggle="collapse" href="#tizhoosh"  aria-expanded="false" aria-controls="tizhoosh">
+          <div class="module m-3">
+            <a role="button" class="collapsed text-center" data-toggle="collapse" href="#tizhoosh" aria-expanded="false" aria-controls="tizhoosh"></a>
+            <h3>SBME Seminar - Dr. Tizhoosh Lecture</h3>
+            <i>05-19-22</i>
+            <p><b>Overview:</b> Applications of AI in pathology along with the emergence of digital pathology will be reviewed. Particular emphasis will be on multi-modal search including whole slide images. Future challenges and The impact on post-pandemic healthcare will be discussed.</p>
+            <p class="collapse" id="tizhoosh" aria-expanded="false">
+            <zero-md src="https://raw.githubusercontent.com/gitUmaru/notes/master/SBME%20Events/AI%2C%20Digital%20Pathology%20and%20Post-Pandemic%20Healthcare.md" no-shadow></zero-md>
+            </p>
+        </div>
+      </div>
 
-        <zero-md src="./example.md"></zero-md>
-
-      <footer>
-
-      </footer>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS and CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/typed/typed.min.js"></script>
-    <script src="js/scale.fix.js"></script>
-    <script src="js/script.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
-  </body>
+<footer>
+</footer>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS and CDN-->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/typed/typed.min.js"></script>
+<script src="js/scale.fix.js"></script>
+<script src="js/script.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
 </html>
