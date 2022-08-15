@@ -20,6 +20,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
 
+    <!-- note taking CDN imports -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
+        },
+      };
+    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
+    ></script>
+
   </head>
   <body>
     <div class="row mx-auto wrapper justify-content-center">
@@ -59,18 +75,6 @@
     </div>
     <div class="wrapper row mx-auto justify-content-center">
       
-      <div class="container bg-light blog-post mt-4" role="button" class="collapsed text-center" data-toggle="collapse" href="#cat"  aria-expanded="false" aria-controls="cat">
-        <div class="module m-3">
-            <a role="button" class="collapsed text-center" data-toggle="collapse" href="#cat"  aria-expanded="false" aria-controls="cat"> </a>
-            <h3>Category Theory</h3>
-            <i>By Steve Awodey</i>
-            <p> <b>Overview: </b>Lecture notes on the book <i>Category Theory</i> by Dr. Steve Awodey. The notes shown in the preview are the latest notes taken, for the full list of notes please go to <a class="no-content" target="_blank" href="https://github.com/gitUmaru/notes/tree/master/Category%20Theory">gitUmaru/notes</a> </p>
-            <p class="collapse" id="cat" aria-expanded="false">
-            <zero-md src="https://raw.githubusercontent.com/gitUmaru/notes/master/Category%20Theory/lecture1.md" no-shadow></zero-md>
-            </p>
-          </div>
-        </div>
-
       <div class="container bg-light blog-post mt-4" role="button" class="collapsed text-center" data-toggle="collapse" href="#deBoer"  aria-expanded="false" aria-controls="deBoer">
         <div class="module m-3">
             <a role="button" class="collapsed text-center" data-toggle="collapse" href="#deBoer"  aria-expanded="false" aria-controls="deBoer"> </a>
@@ -83,20 +87,31 @@
           </div>
         </div>
         
-        <p class="text-center">Still under construction...</p>
+        <div class="container bg-light blog-post mt-4" role="button" class="collapsed text-center" data-toggle="collapse" href="#tizhoosh"  aria-expanded="false" aria-controls="tizhoosh">
+          <div class="module m-3">
+            <a role="button" class="collapsed text-center" data-toggle="collapse" href="#tizhoosh" aria-expanded="false" aria-controls="tizhoosh"></a>
+            <h3>SBME Seminar - Dr. Tizhoosh Lecture</h3>
+            <i>05-19-22</i>
+            <p><b>Overview:</b> Applications of AI in pathology along with the emergence of digital pathology will be reviewed. Particular emphasis will be on multi-modal search including whole slide images. Future challenges and The impact on post-pandemic healthcare will be discussed.</p>
+            <p class="collapse" id="tizhoosh" aria-expanded="false">
+            <zero-md src="https://raw.githubusercontent.com/gitUmaru/notes/master/SBME%20Events/AI%2C%20Digital%20Pathology%20and%20Post-Pandemic%20Healthcare.md" no-shadow></zero-md>
+            </p>
+        </div>
+      </div>
 
-      <footer>
-
-      </footer>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS and CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/typed/typed.min.js"></script>
-    <script src="js/scale.fix.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<footer>
+</footer>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS and CDN-->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/typed/typed.min.js"></script>
+<script src="js/scale.fix.js"></script>
+<script src="js/script.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
 </html>

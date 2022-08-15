@@ -305,15 +305,11 @@ footer {
 }
 
 .module a.collapsed:after {
-  content: '+ Open 📘';
+  content: '+ Open';
 }
 
 .module a:not(.collapsed):after {
-  content: '- Close 📖';
-}
-
-.no-content:after {
-  content: none !important;
+  content: '- Close';
 }
 
 .blog-post {
