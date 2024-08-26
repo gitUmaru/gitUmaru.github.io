@@ -39,7 +39,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto ml-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -50,7 +50,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#sorry-not-yet">Resume</a>
-            </li>
+            </li> -->
           </ul>
           <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -68,23 +68,26 @@
         <img src="./images/outsidemar.jpg" class="img-fluid rounded-circle mb-3" alt="Profile picture">
 
         <h5><span class="typed text-primary"
-            data-typed-items="Biomedical Engineering Graduate, Aspiring Scientist, Research Assistant, Software Developer, Pretends to know how to code"></span>
+            data-typed-items="PhD Student, Software Developer, Biomedical Engineer, Aspiring Student of Knowledge, Wannabe Scientist, Pretends to know how to code, As a large language model..."></span>
         </h5>
 
 
-        <p class="lead">Engineering Graduate from the University of British Columbia</p>
+        <p class="lead">PhD Student at Waterloo</p>
         <br>
 
-        <h5>Affilations</h3>
-          <p class="font-weight-light">School of Biomedical Engineering, UBC (<a target="_"
-              href="https://www.bme.ubc.ca/"><abbr title="University of British Columbia">SBME</abbr></a>)<br>BC Cancer
-            - Vancouver (<a target="_blank" href="https://www.bccrc.ca/dept/ccr/"><abbr
-                title="BC Cancer Vancouver - Department of Cancer Control Research">CCR</abbr></a>)</p>
+        <h5>Academic Affilations</h3>
+          <p class="font-weight-light">
+            <a target="_" href="https://uwaterloo.ca/systems-design-engineering/"><abbr title="Systems Design Engineering">SYDE</abbr></a> @ Waterloo 
+            <br>
+            <a target="_" href="https://www.bme.ubc.ca/"><abbr title="School of Biomedical Engineering">SBME</abbr></a> @ UBC
+            <br>
+            <a target="_blank" href="https://www.bccrc.ca/dept/ccr/"><abbr title="Department of Cancer Control Research">CCR</abbr></a> @ BC Cancer   
+          </p>
           <br>
 
           <h5>Contact me!</h5>
           <p class="font-weight-light"> The best way to reach me is through my email<sup><a target="_blank"
-                href="mailto:umaruali@student.ubc.ca">1</a></sup>. Also check out my Github<a target="_blank"
+                href="mailto:umar.ali@uwaterloo.ca">1</a></sup>. Also check out my Github<a target="_blank"
               href="https://github.com/gitUmaru"><sup>2</sup></a> and Linkedin<a target="_blank"
               href="https://www.linkedin.com/in/muhammad-umar-ali/"><sup>3</sup></a></p>
           <div class="social d-flex justify-content-center">
@@ -108,7 +111,7 @@
 
           <hr>
           <div class="">
-            <p class="font-weight-light small mb-0"><sup>1</sup> umaruali@student.ubc.ca</p>
+            <p class="font-weight-light small mb-0"><sup>1</sup> umar.ali@uwaterloo.ca</p>
             <p class="font-weight-light small mb-0"><sup>2</sup> github.com/gitUmaru</p>
             <p class="font-weight-light small mb-0"><sup>3</sup> /in/muhammad-umar-ali</p>
           </div>
@@ -123,46 +126,53 @@
         <hr>
 
         <h4>Hey 👋</h3>
-          <p>I am an engineering graduate from UBC with a major in biomedical engineering and
-            concentration in bioinformatics. I have an avid interest in all things medicine but a particular interest in
-            deep learning, medical imaging, and translational research. I am currently a software developer at <a
-              target="_blank" href="https://aspectbiosystems.com/">Aspect Biosystems</a> and a lab member at the <a
-              target="_blank" href="https://www.stemcellbioengineering.ca/">Stemcell Bioengineering Laboratory</a>.
+          <p>I am a PhD student at the University of Waterloo with a focus in biomedical engineering and machine learning.
+            I have an avid interest in all things medicine but a particular interest in deep learning, medical imaging, and translational research.
+            I am super excited about research and bringing new technologies to patients, either through entrepreneurial ventures or otherwise.
+            <!-- I am currently a software developer at <a target="_blank" href="https://aspectbiosystems.com/">Aspect Biosystems</a> and a lab member at the <a target="_blank" href="https://www.stemcellbioengineering.ca/">Stemcell Bioengineering Laboratory</a>. -->
           </p>
+          <p>
+            My current research focuses on leveraging the rich source of data from photon absorption remote sensing (<a target="_blank" href="https://arxiv.org/pdf/2403.04229">PARS</a>) to create better systems around medical treatment & diagnosing.
+            I'm really interested in translating technical findings to tangible clinical results, from bechtop to bedside, and actually making an impact on the patient. 
 
+          </p>
+          <p>Please reach out to me if you have any ideas that you'd like to collaborate on!</p>
           <!-- <p>I have developed a wide breadth of skills in software/electrical engineering, mathematics, and communications. My unique skillset gives me a valuable perspective on a project and lets me communicate between clinicians, engineers and the end-user. From translating clinical requirements to creating design architectures, my goal is to serve as a liason between different disciplines to maximize synergy.
           </p>
             <br> -->
       </section>
 
       <section id="projects" class="">
-        <h3 class="text-secondary">Projects</h3>
+        <h3 class="text-secondary">Project Spotlight</h3>
         <hr>
         <p></p>
         <!-- <h4>Personal</h4><hr style="width:50%;"> -->
         <ul class="timelinelist">
+          <li><a target="_blank" href="https://github.com/gitUmaru/iqcell">IQCELL</a> <span
+              class="badge badge-primary">Research</span> - Python package to infer, analyze, and simulate gene regulatory networks from single-cell RNA seq data of stem cell cultures. [<a target="_blank"
+              href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009907">Paper</a>]
+          </li>
           <li><a target="_blank" href="./images/capstone.JPG">Dynamic OCT Microscope</a> <span
-              class="badge badge-success">Capstone</span> - Designing a dynamic optical coherence tomography (OCT)
-            microscope to take 3D microscopic tomograms non-invasively. [<a target="_blank"
+              class="badge badge-success">Capstone</span> - Designing a dynamic optical coherence tomography (OCT) microscope to take 3D tomograms non-invasively. [<a target="_blank"
               href="./images/capstone.JPG">Poster</a>]
           </li>
-          <li><a target="_blank" href="https://tinyurl.com/yolocell">YOLOCell App</a> <span
+          <!-- <li><a target="_blank" href="https://tinyurl.com/yolocell">YOLOCell App</a> <span
               class="badge badge-danger">BMEG 357, Course</span> - Design for a software medical device, documented with
             <abbr title="Design History Files">DHFs</abbr> as per <abbr
               title="US Food and Drug Administration">FDA</abbr> guidelines, for blood microscope slides. [<a
               target="_blank" href="https://tinyurl.com/yolocellui">Demo</a>, <a target="_blank"
               href="https://tinyurl.com/yolocellml">Analytics</a>]
-          </li>
-          <li><a target="_blank" href="files/BMEG371 - Tumour Modelling.pdf">Modelling Tumour Metastasis</a> <span
-              class="badge badge-danger">BMEG 371, Course</span> - Authored
-            <i>de facto</i> textbook for course on mathematically modelling fluid transport in biological context.
+          </li> -->
+          <li><a target="_blank" href="https://drive.google.com/file/d/1gRywTtT1nBMB-fyXVu6v4XI_jILizOIM/view">Transport Phenomena in Cells & Tissues</a> <span
+              class="badge badge-danger">Course</span> - Authored
+            <i>de facto</i> textbook for course on mathematically modelling fluid transport in biological context. <span class="text-secondary">(BMEG 371)</span>
           </li>
           <!-- <li><a target="_blank" href="https://devpost.com/software/meter-one">Meter One</a> <span
               class="badge badge-info">Altium, Python, Flutter</span> - An all-in-one medical device design for blood
             oxygen saturation, heart rate, and white blood cell count. <span class="text-secondary">(Hack the North 2021
               @ UofT)</span></li> -->
           <li><a target="_blank" href="https://devpost.com/software/invictus">PixGen</a> <span
-              class="badge badge-info">Python, Tensorflow</span> - Database and image generator to train doctors on skin
+              class="badge badge-info">Hackathon</span> - Database and image generator to train doctors on skin
             conditions of people of colours <span class="text-secondary">(MedHacks 2021 @ JHU)</span></li>
           <!-- <li><a target="_blank" href="https://github.com/gitUmaru/Pathomatic">Pathomatic</a> <span
               class="badge badge-success">Android, Flutter, Dart</span> - Android application for real time ovarian
@@ -187,12 +197,6 @@
         <h4 class="text-dark mt-4">Journals</h4>
         <hr style="width: 50%;">
         <ul>
-          <li>Amin Abdolkhani, <b>Umar Ali</b>, Hamza Rasheed, and Johnny Zhao. "Predicting Patient Readmission for
-            Improved Resource Allocation using Machine Learning" in <a target="_blank"
-              href="https://journal.stemfellowship.org/doi/abs/10.17975/sfj-2022-010"><i>STEM Fellowship
-                Journal.</i></a> <a target="_blank"
-              href="files/Predicting Patient Readmission for Improved Resource Allocation using Machine Learning.pdf">(Full
-              Paper)</a></li>
           <li>Amin Abdolkhani, <b>Umar Ali</b>, Hamza Rasheed, and Johnny Zhao. "Characterization and Detection of
             Misinformation to Inform Healthcare Policies" in <a target="_blank"
               href="https://journal.stemfellowship.org/doi/10.17975/sfj-2021-003"><i>STEM Fellowship Journal.</i></a> <a
@@ -205,19 +209,15 @@
         <hr style="width: 50%;">
         <ul>
           <li><b>Umar Ali</b>, Andy Zhao, Daniel C. Louie, Yuheng Wang, Harvey Lui, Sunil Kalia, and Tim K. Lee.
+            "Bridging Skin Color Bias in Dermatology 
+            with Generative Networks" in <i class="text-primary">Harvard University <abbr
+                title="National Collegiate Research Conference">NCRC</abbr> 2024</i></li>
+          <li><b>Umar Ali</b>, Andy Zhao, Daniel C. Louie, Yuheng Wang, Harvey Lui, Sunil Kalia, and Tim K. Lee.
             "Generating Skin Images Using Artificial Intelligence" in <i class="text-primary">UBC Faculty of Medicine
               Research Showcase 2022</i></li>
           <li><b>Umar Ali</b>, Andy Zhao, Daniel C. Louie, Yuheng Wang, Harvey Lui, Sunil Kalia, and Tim K. Lee.
-            "Synthesizing novel inflammatory skin clinical images for patients of color using a style-based generative
-            adversarial network" in <i class="text-primary">Harvard University <abbr
-                title="National Collegiate Research Conference">NCRC</abbr> 2021</i></li>
-          <li><b>Umar Ali</b>, Andy Zhao, Daniel C. Louie, Yuheng Wang, Harvey Lui, Sunil Kalia, and Tim K. Lee.
             "Synthesizing novel skin cancer clinical images for patients of color using a style-based generative
             adversarial network" in <i class="text-primary">BC Cancer Summit 2021</i></li>
-          <li>Johnny Zhao, <b>Umar Ali</b>, Calvin Kuo. "Literature Review on Juvenile Disk Disorder and Congenital Disc
-            Diseases
-            " in <i class="text-primary">UBC <abbr
-                title="Multidisciplinary Undergradute Research Conference">MURC</abbr> 2021</i></li>
         </ul>
       </section>
 
@@ -231,17 +231,30 @@
       <h3 class="text-secondary">Education/Work Experience</h3>
       <hr>
       <ul class="timeline">
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">PhD in Systems Design Engineering</h4>
+              <h5 class="timeline-subtitle">University of Waterloo</h5>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Sep 2024 - Present</small></p>
+            </div>
+            <div class="timeline-body">
+
+              <i class="fas fa-chalkboard-teacher"></i> Advisor: <a href="https://www.photomedicinelabs.com/  " target="_blank">Dr. Parsin Haji Reza</a><br>
+            </div>
+          </div>
+        </li>
         <li class="timeline">
           <div class="timeline-badge warning"><i class="fas fa-briefcase"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">Software Developer</h4>
               <h5 class="timeline-subtitle">Aspect Biosystems</h5>
-              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Jun 2023 - Current</small></p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Jun 2023 - Aug 2024</small></p>
             </div>
             <div class="timeline-body">
-              <p>Spearheaded development of cloud application to integrate into Aspect full-stack tissue therapeutic
-                platform.
+              <p>Spearheaded development of cloud application to integrate into Aspect Biosystem's full-stack tissue therapeutic platform.
               </p>
             </div>
           </div>
@@ -250,7 +263,7 @@
           <div class="timeline-badge primary"><i class="fas fa-graduation-cap"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
-              <h4 class="timeline-title">BASc Biomedical Engineering</h4>
+              <h4 class="timeline-title">BASc in Biomedical Engineering</h4>
               <h5 class="timeline-subtitle">University of British Columbia</h5>
               <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Sep 2019 - May 2024</small></p>
             </div>
@@ -312,10 +325,7 @@
               <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> May 2022 - Aug 2022</small></p>
             </div>
             <div class="timeline-body">
-              <p> Tochtech Technologies is a digital health company, developing <abbr
-                  title="Internet of Things">IoT</abbr> products and solutions for the growing senior care market
-                segment. I am working under the <abbr title="Cheif Technology Officer">CTO</abbr> and development team
-                to review design, test hardware & software, and support customers.</p>
+              <p> Helped develop <abbr title="Internet of Things">IoT</abbr> products and solutions for the growing senior care market segment. </p>
             </div>
           </div>
         </li>
@@ -328,8 +338,7 @@
               <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Jun 2021 - Aug 2021</small></p>
             </div>
             <div class="timeline-body">
-              <p>Curating a curriculum for the development of "Coding Bootcamp". Under the direct supervision of Dr.
-                Negar Harandi and Dr. Carl deBoer</p>
+              <p>Curating a curriculum for the development of a Coding Bootcamp . Under the direct supervision of Dr. Negar Harandi and Dr. Carl deBoer</p>
             </div>
           </div>
         </li>
@@ -339,7 +348,7 @@
             <div class="timeline-heading">
               <h4 class="timeline-title">Research Assistant</h4>
               <h5 class="timeline-subtitle">BC Cancer</h5>
-              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Sep 2021 - Aug 2021</small></p>
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> May 2021 - Aug 2021</small></p>
             </div>
             <div class="timeline-body">
               <p>Conducting research under Dr. Tim Lee, working on topics related with <abbr
